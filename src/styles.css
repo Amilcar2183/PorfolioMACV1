@@ -1,83 +1,272 @@
-h1 {color: blue;
-    font-size: 25px }
-    *ENCABEZADO*/
-  .bg-encabezado {
-      background-color: #63833f;
-      position: sticky;
-      top: 0px;
-      z-index: 10;
-  
-  }
-  .tm-encabezado {
-      text-align: left;	
-  }
-  .icon {
-      --sizeIcon: 16px;
-      width: var(--sizeIcon);
-      height: var(--sizeIcon);
-    }
-    .bg-icons {
-        color: white;
-    }
-    .icons-social-networks > a {
-      text-decoration: none;	
-    }
-  
-  
-  /*PRIMER SECCION*/
-  
-  .mat-card{
-  border-radius: 32px;
-  margin: 5px 30px;
-  border-color: #0a66c2;
-  }
-  .bg-seccion1 {
-      background-color: whitesmoke;
-  }
-  .imgCabecera {
-      MAX-HEIGHT: 300PX;
-      WIDTH: 100%
-  }
-  #info-img{
-      margin-top: -100px;	
-  }
-  
-  .imagen-redonda {
-      width: 200px;
-      height: 200px;
-      background-size: cover;
-      border-radius:50%;
-      border:1px solid rgb(155, 155, 155);
-  }
-  #titulo1 img{
-      width: 8rem;
-      height: 4rem;
-      background-color: #5796f5;
-      border-radius: 10px;
-  }
-  #titulo2 img{
-      width: 8rem;
-      height: 4rem;
-  }
-  @media screen and (max-width:575px) {
-      .centrado{
-          text-align: center;
-      }
-      .imagen-redonda {
-          width: 150px;
-          height: 150px;
-          background-size: cover;
-          border-radius:50%;
-          border:1px solid rgb(155, 155, 155);
-      }
-      #info-img{
-          margin-top: -70px;	
-      }
-  
-  }
-  
-  /*PRIMER SECCION*/
-  
-  /*.info-text{
-      margin-top: 80px;	
-  }*/ 
+
+   
+    * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+i {
+color: rgb(22, 21, 21);
+}
+
+/*nav*/
+
+nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgb(49, 49, 49);
+padding: 10px;
+}
+
+.logo {
+color: #fff;
+font-size: 15px;
+padding: 10px 0;
+}
+
+.navlinks ul {
+align-items: center;
+list-style: none;
+display: flex;
+}
+
+.navlinks li {
+padding: 5px 10px;
+}
+
+.navlinks i {
+font-size: 30px;
+color: rgb(133, 133, 133);
+}
+
+.navlinks-iz {
+text-decoration: none;
+align-items: center;
+list-style: none;
+display: flex;
+color: white;
+padding: 5px 10px;
+
+font-size:  30px;
+}
+
+
+.boton {
+text-decoration: none;
+color: white;
+border: 1px solid rgb(0, 87, 61);
+background-color: rgb(101, 139, 255);
+padding: 10px 20px;
+border-radius: 5px;
+font-weight: 600;
+}
+
+.texto-blanco{
+text-align: left;
+color: white;
+}
+
+/*header*/
+
+.row {
+display: flex;
+justify-content: space-between;
+}
+
+header {
+width: 90%;
+margin: 5px auto;
+border: 1px solid rgb(214, 214, 214);
+border-radius: 20px;
+}
+
+.fondo {
+background-image: url(https://github.com/Amilcar2183/PorfolioMACV1/blob/master/img/fondo2.jpg?raw=true);
+height: 300px;
+width: 100%;
+background-size: cover;
+background-position: center;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.foto-perfil {
+position: relative;
+bottom: 120px;
+padding-left: 20px;
+margin-bottom: -120px;
+}
+
+.foto-perfil img {
+border: 1px solid rgb(187, 187, 187);
+border-radius: 50%;
+}
+
+.foto-perfil i {
+font-size: 10px;
+color: rgb(59, 59, 59);
+position: relative;
+bottom: 25px;
+}
+
+.header-izq {
+margin-left: 20px;
+margin-bottom: 10px;
+}
+
+.header-texto h1,
+.header-texto p {
+margin-bottom: 5px;
+}
+
+.header-texto a {
+text-decoration: none;
+color: rgb(77, 121, 255);
+}
+
+.header-botones {
+padding: 10px 0 15px 0;
+}
+
+.boton-azul {
+text-decoration: none;
+padding: 10px 15px;
+background-color: rgb(101, 139, 255);
+color: white;
+border-radius: 5px;
+margin-right: 5px;
+}
+
+.boton-gris {
+text-decoration: none;
+padding: 10px 15px;
+background-color: rgb(230, 230, 230);
+color: rgb(133, 133, 133);
+border-radius: 5px;
+margin-right: 5px;
+}
+
+.header-der {
+margin: auto 10px;
+}
+
+.logos-edu {
+align-items: center;
+padding: 25px 50px;
+}
+
+.logos-edu img {
+height: 70px;
+width: auto;
+display: block;
+margin-bottom: 10px;
+}
+
+/*section*/
+
+section {
+width: 80%;
+margin: auto;
+border: 1px solid rgb(165, 165, 165);
+border-radius: 20px;
+margin-bottom: 15px;
+}
+
+section .row {
+padding: 25px;
+}
+
+.texto1 h1 {
+color: #333;
+}
+
+.experiencia {
+display: flex;
+}
+
+.texto2 h1 {
+margin-bottom: 20px;
+color: #333;
+}
+
+.texto2 img {
+width: 50px;
+height: auto;
+}
+
+.experiencia-texto {
+padding: 0 20px;
+}
+
+.experiencia-texto h2 {
+margin-bottom: 10px;
+color: #333;
+}
+
+.texto-chico {
+font-size: 10px;
+margin-bottom: 10px;
+}
+
+.texto-gris {
+color: rgb(170, 170, 170);
+font-weight: 600;
+font-size: 20px;
+}
+
+.fa-plus {
+display: block;
+margin-left: 33px;
+margin-bottom: 10px;
+}
+
+.iconos-der .fa-trash {
+margin-left: 10px;
+}
+
+@media (max-width: 800px) {
+header,
+section {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.header-izq {
+  width: 90%;
+  margin: auto;
+}
+
+.boton-gris,
+.boton-azul {
+  width: 100%;
+  margin: auto;
+}
+
+header .row {
+  flex-direction: column;
+}
+
+.logos-edu {
+  display: none;
+}
+
+.fondo {
+  height: 300px;
+}
+
+.header-botones {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-botones a {
+  margin-bottom: 10px;
+}
+}
+
