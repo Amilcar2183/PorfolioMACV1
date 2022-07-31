@@ -206,6 +206,14 @@ font-weight: 900; ;
   text-align: justify;
   }
  
+  #texto-gris1 {
+    color: rgb(170, 170, 170);
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 10%;
+    text-align: justify;
+    }
+
 .experiencia {
 display: flex;
 }
